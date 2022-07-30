@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<main>
+		<section id="container">
+			<h1>Calcular média</h1>
+			<hr>
+			<form>
+			<div class="form-itens">
+				<label for="nota1">Nota 1:</label>
+				<input type="number" name="nota1" id="nota1" min="0.0" max="10.0" step="0.1" required autofocus required onblur="validaNum(this)">
+			</div>
+			<div class="form-itens">
+				<label for="nota2">Nota 2:</label>
+				<input type="number" name="nota2" id="nota2" min="0.0" max="10.0" step="0.1" autofocus required onblur="validaNum(this)">
+			</div>
+			<div class="form-itens">
+				<button class="btn" id="btnCal" type="submit">Calcular</button>
+				<button type="reset" class="btn" id="btnClean">Limpar</button>
+			</div>
+			<div class="form-itens">
+				<label for="media">Média</label>
+				<input type="number" name="media" id="media" value="" readonly>
+			</div>
+			<div class="form-itens">
+				<input type="text" name="situation" id="situation" class="box" placeholder="situação final" readonly>
+			</div>
+		</form>
+		<p id="aviso"></p>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
