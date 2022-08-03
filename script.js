@@ -65,7 +65,7 @@ btnCal.addEventListener('click', function(e){
 	let nota1= parseFloat(notaUm.value);
 	let nota2= parseFloat(notaDois.value);
 	let mediaFinal=CalMedia(nota1,nota2);
-	if(isNaN(mediaFinal) || mediaFinal>0 || mediaFinal > 10){
+	if(isNaN(mediaFinal) || mediaFinal < 0){
 		boxSituation.value='';
 	}else{
 		media.value=mediaFinal;
